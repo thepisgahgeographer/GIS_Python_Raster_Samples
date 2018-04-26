@@ -1,4 +1,4 @@
-# Raster_Samples
+# Python_Raster_Samples
 
 * Please note that all input data types are hardcoded and need to be edited depending upon the situation.
 
