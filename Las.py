@@ -1,10 +1,11 @@
+import arcpy
 import laspy
 import os, sys, matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 
 #Specify a variable to store the file object
-inputLas = laspy.file.File("C:\\Users\\yuri7100\\Desktop\\1619", mode = "r")
+inputLas = arcpy.GetParameterAsText(0)
 
 
 print("Header Fields Are:")
