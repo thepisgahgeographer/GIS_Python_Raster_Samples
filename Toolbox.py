@@ -19,11 +19,18 @@ class Tool(object):
     def __init__(self):
         """Define the tool (tool name is the name of the class)."""
         self.label = "Read_LAS_Header"
-        self.description = ""
+        self.description = "This script tool crawls through a raw .las file and writes out that info to a .txt file"
         self.canRunInBackground = False
 
     def getParameterInfo(self):
-        """Define parameter definitions"""
+        
+        input_LAS = arcpy.Parameter(
+            displayName = "Input LAS File",
+            name = "File",
+            datatype = "DEFile",
+            parameterType = "Required"
+        )
+
         params = None
         return params
 
